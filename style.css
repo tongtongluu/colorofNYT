@@ -62,9 +62,18 @@ svg {
     width: 500px; */
 }
 #caption {
-    margin-top: 100px;
+    margin-top:0px;
     font-family: 'Syne Mono', monospace;
     color: #C4C4C4
+    /* height: 300px;
+    width: 500px; */
+}
+#title {
+    margin-top: 50px;
+    font-family: 'Syne Mono', monospace;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 24px;
     /* height: 300px;
     width: 500px; */
 }

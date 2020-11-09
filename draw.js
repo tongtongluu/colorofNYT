@@ -22,6 +22,7 @@ function drawInitial() {
             .attr('y', dy - 25)
             .attr('xlink:href', 'sample.png')
             .attr('id', function(d) { return 'img' + dy + d })
+            .attr('opacity', 1)
 
         node.append('rect')
             .attr('width', 15)
@@ -30,6 +31,7 @@ function drawInitial() {
             .attr('y', dy)
             .attr('fill', 'red')
             .attr('id', function(d) { return 'rect' + dy + d + 'top' })
+            .attr('opacity', 1)
 
         node.append('rect')
             .attr('width', 15)
@@ -38,6 +40,7 @@ function drawInitial() {
             .attr('y', dy + 25)
             .attr('fill', 'blue')
             .attr('id', function(d) { return 'rect' + dy + d + 'mid' })
+            .attr('opacity', 1)
 
         node.append('rect')
             .attr('width', 15)
@@ -46,6 +49,7 @@ function drawInitial() {
             .attr('y', dy + 50)
             .attr('fill', 'green')
             .attr('id', function(d) { return 'rect' + dy + d + 'bot' })
+            .attr('opacity', 1)
 
         svg.append("text")
             .text(months[iy])

@@ -153,6 +153,21 @@ fetchContentDataById("2020/1").then(articles => {
                                                         prev.src = 'https://static01.nyt.com/' + rand_d.multimedia[0].url
                                                         let cap = document.getElementById('caption')
                                                         cap.innerHTML = rand_d.abstract
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = rand_d.headline.main
+                                                        d3.select(imgid)
+                                                        .attr('border', 1)
+                                                        .attr('stroke', 'black')
+                                                        .attr('opacity', 1)
+                                                    })
+                                                    .on('mouseout', function() {
+                                                        d3.select(imgid)
+                                                        .attr('border', 0)
+                                                        .attr('stroke', 'white')
+                                                        .attr('opacity', 0.5)
+                                                    })
+                                                    .on('click', function() {
+                                                        window.open(rand_d.web_url)
                                                     })
 
                                                 d3.select(xytop)
@@ -161,6 +176,25 @@ fetchContentDataById("2020/1").then(articles => {
                                                         prev.src = 'https://static01.nyt.com/' + rand_d.multimedia[0].url
                                                         let cap = document.getElementById('caption')
                                                         cap.innerHTML = rand_d.abstract
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = rand_d.headline.main
+                                                        d3.select(xytop)
+                                                        .attr('stroke', "#333333")
+                                                        .attr('stroke-width', 5)
+                                                        .attr('opacity', 0.5)
+                                                    })
+                                                    .on('mouseout', function() {
+                                                        let cap = document.getElementById('caption')
+                                                        cap.innerHTML = ">>>>Hover over color blocks to read the article"
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = ">>>Hmmm, Interesting"
+                                                        d3.select(xytop)
+                                                        .attr('stroke-width', 0)
+                                                        .attr('opacity', 1)
+                                                        
+                                                    })
+                                                    .on('click', function() {
+                                                        window.open(rand_d.web_url)
                                                     })
                                                 d3.select(xymid)
                                                     .on('mouseover', function() {
@@ -168,6 +202,24 @@ fetchContentDataById("2020/1").then(articles => {
                                                         prev.src = 'https://static01.nyt.com/' + rand_d.multimedia[0].url
                                                         let cap = document.getElementById('caption')
                                                         cap.innerHTML = rand_d.abstract
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = rand_d.headline.main
+                                                        d3.select(xymid)
+                                                        .attr('stroke', "#333333")
+                                                        .attr('stroke-width', 5)
+                                                        .attr('opacity', 0.5)
+                                                    })
+                                                    .on('mouseout', function() {
+                                                        let cap = document.getElementById('caption')
+                                                        cap.innerHTML = ">>>>Hover over color blocks to read the article"
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = ">>>Hmmm, Interesting"
+                                                        d3.select(xymid)
+                                                        .attr('stroke-width', 0)
+                                                        .attr('opacity', 1)
+                                                    })
+                                                    .on('click', function() {
+                                                        window.open(rand_d.web_url)
                                                     })
                                                 d3.select(xybot)
                                                     .on('mouseover', function() {
@@ -175,6 +227,24 @@ fetchContentDataById("2020/1").then(articles => {
                                                         prev.src = 'https://static01.nyt.com/' + rand_d.multimedia[0].url
                                                         let cap = document.getElementById('caption')
                                                         cap.innerHTML = rand_d.abstract
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = rand_d.headline.main
+                                                        d3.select(xybot)
+                                                        .attr('stroke', "#333333")
+                                                        .attr('stroke-width', 5)
+                                                        .attr('opacity', 0.5)
+                                                    })
+                                                    .on('mouseout', function() {
+                                                        let cap = document.getElementById('caption')
+                                                        cap.innerHTML = ">>>>Hover over color blocks to read the article"
+                                                        let title = document.getElementById('title')
+                                                        title.innerHTML = ">>>Hmmm, Interesting"
+                                                        d3.select(xybot)
+                                                        .attr('stroke-width', 0)
+                                                        .attr('opacity', 1)
+                                                    })
+                                                    .on('click', function() {
+                                                        window.open(rand_d.web_url)
                                                     })
 
                                                 var img = document.createElement('img');
