@@ -1,0 +1,70 @@
+body {
+    width: 1080px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #FAF0E6;
+    color:#333333;
+}
+
+svg {
+    margin-top: -750px;
+    font-family: 'Syne Mono', monospace;
+    font-size:24px;  
+}
+
+.top {
+    margin-right: 200px;
+    margin-top:150px;
+    text-align: left;
+    font-family: 'Special Elite', cursive;
+    font-size:24px;
+    text-decoration: line-through;
+    
+}
+.top1 {
+    margin-right: 100px;
+    text-align: right;
+    font-family: 'Syne Mono', monospace;
+    font-size:48px;  
+}
+
+#legend {
+    margin-left: 1200px;
+    height: 300px;
+    width: 500px;
+
+}
+#display {
+    margin-left: 1100px;
+    margin-right:10px;
+    margin-top: 250px;
+    height: 600px;
+    width: 500px;
+    
+}
+
+#maincaption {
+    margin-top: 50px;
+    font-family: 'Syne Mono', monospace;
+    color: #333333;
+    font-size:18px;
+}
+
+#preview {
+    margin-top: 50px;
+    /* height: 500px;
+    width: 500px; */
+    border-radius: 15px;
+}
+#preview1 {
+    margin-top: -100px;
+    /* height: 300px;
+    width: 500px; */
+}
+#caption {
+    margin-top: 100px;
+    font-family: 'Syne Mono', monospace;
+    color: #C4C4C4
+    /* height: 300px;
+    width: 500px; */
+}
